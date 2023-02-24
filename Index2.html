@@ -5,10 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atv1Java/title>
+        <script>
+        function escreveMsgNoSpan(txtDaMsg)
+        {
+            let meuElemSpan = document.getElementById("meuSpanDeMsg");
+            meuElemSpan.innerHTML = txtDaMsg;
+            console.log(meuElemSpan);
+        }
+        escreveMsgNoSpan("minha mensagem que não aparece");
+    </script> 
 </head>
 <body>
     <h1>Atividade 2-java</h1>
     <p>1- um Index2.html que tenta usar um elemento html, tipo um spam de mensagem no head mas que o elemento não foi carregado ainda, ou não existe ainda porque o body não carregou.</p>
-    
+    <span id="meuSpanDeMsg">Carregando</span>
 </body>
 </html>
